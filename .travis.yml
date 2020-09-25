@@ -1,0 +1,13 @@
+dist:     trusty
+sudo:     required
+language: cpp
+os: linux
+compiler: gcc
+
+script:
+    - mkdir build
+    - cd build
+    - cmake ..
+    - make
+    - ctest
+
